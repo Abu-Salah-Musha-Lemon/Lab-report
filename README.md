@@ -3,7 +3,7 @@
 ## Course Code \t          Course Title
 ## 510202                Structured Programming Language Lab 
 ## 510204                Electrical and Electronic Circuit Lab
-## 510222                 Digital Systems Lab
+## 510222                Digital Systems Lab
 ## 520202                Data Structure Lab
 ## 520204                Object Oriented Programming Lab
 ## 520222                Database Management System Lab
@@ -20,22 +20,3 @@
 ## 540206                Computer Graphics Lab
 ## 540208                E-Commerce and Web Engineering Lab           
 ## 540220                Network and Information Security Lab
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-## 
-##  
