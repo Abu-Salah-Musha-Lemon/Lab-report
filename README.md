@@ -1,5 +1,4 @@
 ﻿# Lab-report
-#### https://github.com/kishan0725/Hospital-Management-System
 ## Course Code \t          Course Title
 ## 510202                Structured Programming Language Lab 
 ## 510204                Electrical and Electronic Circuit Lab
