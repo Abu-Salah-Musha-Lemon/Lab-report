@@ -16,25 +16,25 @@ a {
   height: 100%;
   position: relative;
   background: #fbf3f0;
-  border-radius: 50px;
   overflow: hidden;
 }
 
 .Dashboard {
-  width: 943px;
-  height: 927px;
-  left: 349px;
+  width: 60%;
+  height: 100vh;
+  left: 34%;
   top: 29px;
   position: absolute;
 }
 
 .card_list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   position: absolute;
-  margin-top: 151px;
+  margin-top: 20%;
 }
 
 .Card01 {
@@ -50,7 +50,7 @@ a {
   background: white;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.04);
   border-radius: 25px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -193,6 +193,7 @@ a {
   outline: none;
   color: rgba(0, 0, 0, 0.05);
 }
+
 .btn_search {
   width: 200px;
   height: 60px;
@@ -234,8 +235,9 @@ a {
 }
 
 .SideNav {
-  width: 300px;
+  width: 30%;
   height: 100vh;
+  height: 100dvh;
   background: white;
   display: flex;
   justify-content: center;
@@ -244,29 +246,31 @@ a {
 }
 
 .NavButtonPatent {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
 }
 
 .patient {
 
-  width: 200px;
-  height: 60px;
-  text-align: center;
-  color: black;
-  font-size: 15px;
+  color: #FFF;
   font-family: Inter;
-  font-weight: 400;
-  top: 100px;
-  background: rgba(219, 53, 41, 0.9);
-  border-radius: 5px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #DB3529;
   position: relative;
-  box-shadow: 1px 1px 2px #fa7373;
+  text-align: center;
+  text-decoration: none;
 }
 
 .patient:hover {
-  box-shadow: 1px 1px 2px #fa7373;
+
+  box-shadow: 0px 4px 10px 0px rgba(219, 53, 41, 0.40);
 }
 
 
@@ -292,11 +296,13 @@ a {
   gap: 10px;
   display: inline-flex;
 }
+
 .nav_img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
 }
+
 .Img {
   width: 80px;
   height: 80px;
@@ -308,13 +314,75 @@ a {
   height: 120px;
   top: 30px;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   position: absolute;
   background: #f97c72;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 75px;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
   gap: 10px;
   display: inline-flex;
+}
+
+@media (max-width: 480px) {
+  .NavLogo {
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    border-radius: 50%;
+    gap: 10px;
+
+  }
+
+  .AdminInfo {
+    width: 96%;
+    height: 100px;
+    padding: 8px 18px;
+    /* top: 90px; */
+    position: absolute;
+    background: white;
+    gap: 10px;
+  }
+
+  .InfoDes {
+    font-size: 20px;
+
+  }
+  .Text,.Text_2 {
+    color: black;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+  }
+  
+
+  .card_list {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    margin-top: 60%;
+  }
+
+  .patient {
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #DB3529;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+  }
+  
 }
