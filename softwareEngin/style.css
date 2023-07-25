@@ -2,24 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .nav {
     height: 60px;
     border-radius: 10px;
     background: #ede4ff;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
 }
-.left{
+
+.left {
     display: flex;
-    
+
 }
 
-.Home,.logout {
+.Home,
+.logout {
     width: 100px;
     height: 60px;
     font-size: 30px;
@@ -28,10 +30,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}.logout{
+}
+
+.logout {
     border: none;
 }
-.leftActive, :is(.Home,.logout):hover{
+
+.leftActive,
+:is(.Home, .logout):hover {
     cursor: pointer;
 
     border-bottom: 2px solid #9747ff;
@@ -41,29 +47,22 @@
 
 
 .pannel {
-    width: 1280px;
-    height: 580px;
-    flex-shrink: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
     border-radius: 20px 150px;
+    height: 60vh;
     background: #c4b0ff;
-    box-shadow: 10px 10px 20px 0px rgba(205, 192, 243, 0.12);
+    box-shadow: 10px 10px 20px 0px rgb(205 192 243 / 12%);
 }
 
 .pannelFont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
+margin: 10px;
 }
 
 .p {
-    width: 600px;
-    height: 70px;
     margin-top: 20px;
     padding: 10px;
-    gap: 12px;
-    display: flex;
     border-radius: 10px;
     background: #EDE4FF;
     box-shadow: 4px 4px 8px 0px rgba(237, 228, 255, 0.50);
@@ -75,28 +74,22 @@
     font-family: Inter;
     font-weight: 400;
     word-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
+
     text-decoration: none;
     border-radius: 2px;
 }
 
 .active,
 .Patietn:hover {
-
-
     border-bottom: 2px solid #9747FF;
     background: rgba(160, 118, 249, 0.20);
 }
 
 .phone {
-    width: 250px;
-    position: relative;
-    left: -200px;
-    display: flex;
-    gap: 100px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .PhoneNumber {
@@ -106,32 +99,39 @@
     font-size: 25px;
     font-family: Inter;
     font-weight: 400;
-    word-wrap: break-word;
     outline: none;
     border: none;
-    padding: 10px;
-    border-radius: 20px;
+    padding-left: 6px;
+    border-radius: 6px;
+    display: grid;
+    grid-template-rows: 50%;
+    gap: 10px;
 
 }
 
 .button {
-    width: 180px;
-    height: 76px;
-    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
     background: #D0F5BE;
     border: none;
     font-size: 25px;
     font-weight: 400;
-    margin-top: 200px;
 }
 
 .button:hover {
     cursor: pointer;
-    border-radius: 20px;
     background: #D0F5BE;
     box-shadow: 4px 4px 8px 0px rgba(208, 245, 190, 0.50);
 }
-.footer{
-display: grid;
-grid-row: ;
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+}
+
+.footer {
+
 }
