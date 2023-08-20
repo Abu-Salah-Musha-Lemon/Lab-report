@@ -23,7 +23,10 @@
 ## some tools
 ### codeblock
 ### LTspice
+### EMU8086 - MICROPROCESSOR EMULATOR
 ### Keil uVision$
 ### Proteus DesiGN Suite 
+### Cisco Packet Tracer
+### Xampp
 ### drow.io
 
