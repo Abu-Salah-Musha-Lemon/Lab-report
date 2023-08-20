@@ -19,3 +19,9 @@
 ## 540206                Computer Graphics Lab
 ## 540208                E-Commerce and Web Engineering Lab           
 ## 540220                Network and Information Security Lab
+
+## some tools
+### codeblock
+### LTspice
+### Keil uVision$
+### Proteus DesiGN Suite 
