@@ -28,5 +28,8 @@
 ### Proteus DesiGN Suite 
 ### Cisco Packet Tracer
 ### Xampp
-### drow.io
+### prolog
+### flex
+### bison
+### gcc compiler
 
