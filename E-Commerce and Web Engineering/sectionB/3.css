@@ -1,0 +1,17 @@
+/* External CSS */
+body {
+  line-height: 1.6;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* Add more external styles as needed */

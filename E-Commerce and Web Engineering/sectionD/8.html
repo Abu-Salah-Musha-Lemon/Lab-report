@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Actions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Actions</h1>
+
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="removeTag()">Remove Tag</button>
+    <button onclick="insertTag()">Insert New Tag</button>
+
+    <div id="output">Initial text content.</div>
+
+    <script>
+        function changeText() {
+            document.getElementById('output').innerText = 'Text changed!';
+        }
+
+        function changeColor() {
+            var outputDiv = document.getElementById('output');
+            var randomColor = getRandomColor();
+            outputDiv.style.color = randomColor;
+        }
+
+        function removeTag() {
+            var outputDiv = document.getElementById('output');
+            outputDiv.parentNode.removeChild(outputDiv);
+        }
+
+        function insertTag() {
+            var newParagraph = document.createElement('p');
+            newParagraph.innerText = 'New paragraph inserted!';
+            newParagraph.style.color = 'green';
+
+            document.body.appendChild(newParagraph);
+        }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
